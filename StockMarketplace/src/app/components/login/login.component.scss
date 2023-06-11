@@ -1,0 +1,53 @@
+.login-section {
+  background-size: 20%;
+  background: rgb(116,189,167);
+  background: linear-gradient(90deg, rgba(0, 119, 255, 0.082) 0%, rgba(0, 27, 53, 0.7) 35% ,rgba(0, 27, 53, 1) 70%), url("../../../assets/login-bg.jpg"); 
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+  color: antiquewhite;
+
+  .container-fluid {
+      padding-top: 20vh;
+      padding-right: 10vh;
+      padding-left: 4vh;
+  
+      .title {
+          font-size: clamp(7.5vw, 3vw, 30px);            
+          font-family: "exo-thin";
+      }
+
+      .card{
+          padding: 50px;
+          min-height: 20vh;
+          max-width: 60vw;
+          background-color: rgb(0,0,0,0.2);
+  
+          .form-control {
+              background-color: transparent;
+              color: antiquewhite;
+          }
+        input[type="submit"]:disabled {
+          background-color: brown;
+        }
+      }
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+.card {
+  padding: 10px!important;  
+}
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+      text-align: center;
+  }
+
+  .row-card {
+      place-content: center;
+  }
+
+}

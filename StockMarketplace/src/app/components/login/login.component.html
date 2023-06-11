@@ -1,0 +1,43 @@
+<!-- <app-nav></app-nav>
+<form class="login-form"  (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email">
+    </div>
+    <div>
+      <label for="password">Hasło:</label>
+      <input type="password" id="password" formControlName="password">
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid">Zaloguj się</button>
+  </form> -->
+
+  <section class="login-section">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="row justify-content-start col-xl-7 col-lg-7 col-sm-12 col-md-7">
+                <p class="title">WELCOME BACK</p>
+            </div>
+            <div class="row row-card col-xl-4 col-sm-12 col-md-5">
+              <form class="login-form"  (ngSubmit)="onSubmit()">
+
+                <div class="card">
+                    <h1>Sign in</h1>
+                <div class="form-floating my-4">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="password">Password</label>
+                </div>
+                <input class="btn btn-primary mt-5 btn-submit" type="submit" value="Submit">
+                <div class="mt-5">
+                    <p>Nie masz założonego konta? <a routerLink="/register">Załóż konto.</a></p>
+                </div>
+                </div>
+              </form>
+
+            </div>
+        </div>
+    </div>
+</section>
